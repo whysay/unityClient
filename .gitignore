@@ -38,6 +38,7 @@ $PROJDIR
 
 obj
 Temp
+Library
 *.suo
 *.user
 *.pidb
