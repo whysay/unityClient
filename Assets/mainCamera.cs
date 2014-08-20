@@ -235,7 +235,7 @@ public class mainCamera : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Sample ();
-		Connect ();
+		//Connect ();
 
 //		string reqStr;
 //		JsonObjectCollection collection = new JsonObjectCollection();
@@ -247,7 +247,7 @@ public class mainCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		packetProc ();
+		//packetProc ();
 
 	}
 	
@@ -356,25 +356,25 @@ public class mainCamera : MonoBehaviour {
 
 	void OnGUI() 
 	{
-		Event e = Event.current;
-		if (e.button == 0 && e.isMouse)
-		{
-			Debug.Log ("Left Click & send");
-			string reqStr;
-			JsonObjectCollection collection = new JsonObjectCollection ();
-			collection.Add (new JsonNumericValue ("stars", 1));
-			reqStr = collection.ToString ();
-			infoReq (3, reqStr);
-		}
-		else
-			if (e.button == 1)
-				Debug.Log("Right Click");
-		else
-			if (e.button == 2)
-				Debug.Log("Middle Click");
-		else
-			if (e.button > 2)
-				Debug.Log("Another button in the mouse clicked");
+        //Event e = Event.current;
+        //if (e.button == 0 && e.isMouse)
+        //{
+        //    Debug.Log ("Left Click & send");
+        //    string reqStr;
+        //    JsonObjectCollection collection = new JsonObjectCollection ();
+        //    collection.Add (new JsonNumericValue ("stars", 1));
+        //    reqStr = collection.ToString ();
+        //    infoReq (3, reqStr);
+        //}
+        //else
+        //    if (e.button == 1)
+        //        Debug.Log("Right Click");
+        //else
+        //    if (e.button == 2)
+        //        Debug.Log("Middle Click");
+        //else
+        //    if (e.button > 2)
+        //        Debug.Log("Another button in the mouse clicked");
 		
 	}
 	
